@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "239829309852",
+    "firebase_url": "https://projectaps-62461.firebaseio.com",
+    "project_id": "projectaps-62461",
+    "storage_bucket": "projectaps-62461.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:239829309852:android:73322b69ceb1663b8f1059",
+        "android_client_info": {
+          "package_name": "com.example.projectaps"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "239829309852-26r56rskel6qgb2ud7cq8251bu71lerv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAVg2JJH8aRmANwyjzbnFKF9GIF0JMNnS8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "239829309852-26r56rskel6qgb2ud7cq8251bu71lerv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

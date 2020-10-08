@@ -1,0 +1,618 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FragmentBerkas">
+
+    <androidx.appcompat.widget.Toolbar
+        app:title="Berkas"
+        android:id="@+id/toolbarAkun"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:minHeight="?attr/actionBarSize">
+    </androidx.appcompat.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbarAkun"
+        android:scrollbars="none">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/textTranskripNilai"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:text="Transkrip Nilai"
+                android:textColor="@color/colorBlack"
+                android:textSize="20sp"
+                android:textStyle="bold"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@id/textTranskripNilai"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="#dddddd"/>
+
+            <TextView
+                android:id="@+id/matkul1"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textTranskripNilai"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:textSize="18dp"
+                android:text="Bahasa Inggris"
+                android:textColor="@color/colorBlack" />
+
+            <TextView
+                android:layout_width="10dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textTranskripNilai"
+                android:layout_marginTop="20dp"
+                android:layout_toRightOf="@id/matkul1"
+                android:textSize="18dp"
+                android:text=": "
+                android:textColor="@color/colorBlack" />
+
+            <TextView
+                android:id="@+id/textMatkul1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textTranskripNilai"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_toRightOf="@id/matkul1"
+                android:gravity="center"
+                android:textSize="18dp"
+                android:text=""
+                android:textColor="@color/colorBlack" />
+
+            <TextView
+                android:id="@+id/matkul2"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_below="@id/matkul1"
+                android:textSize="18dp"
+                android:text="Basis Data"
+                android:textColor="@color/colorBlack" />
+
+            <TextView
+                android:layout_width="10dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_below="@id/matkul1"
+                android:layout_toRightOf="@id/matkul2"
+                android:textSize="18dp"
+                android:text=": "
+                android:textColor="@color/colorBlack" />
+
+            <TextView
+                android:id="@+id/textMatkul2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_below="@id/matkul1"
+                android:layout_toRightOf="@id/matkul2"
+                android:gravity="center"
+                android:textSize="18dp"
+                android:text=""
+                android:textColor="@color/colorBlack" />
+
+            <TextView
+                android:id="@+id/matkul3"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_below="@id/matkul2"
+                android:textSize="18dp"
+                android:text="Interaksi Manusia dan Komp."
+                android:textColor="@color/colorBlack" />
+
+            <TextView
+                android:layout_width="10dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_below="@id/matkul2"
+                android:layout_toRightOf="@id/matkul3"
+                android:textSize="18dp"
+                android:text=": "
+                android:textColor="@color/colorBlack" />
+
+            <TextView
+                android:id="@+id/textMatkul3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_below="@id/matkul2"
+                android:layout_toRightOf="@id/matkul3"
+                android:gravity="center"
+                android:textSize="18dp"
+                android:text=""
+                android:textColor="@color/colorBlack" />
+
+            <TextView
+                android:id="@+id/matkul4"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_below="@id/matkul3"
+                android:textSize="18dp"
+                android:text="Jaringan Komputer"
+                android:textColor="@color/colorBlack" />
+
+            <TextView
+                android:layout_width="10dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_below="@id/matkul3"
+                android:layout_toRightOf="@id/matkul4"
+                android:textSize="18dp"
+                android:text=": "
+                android:textColor="@color/colorBlack" />
+
+            <TextView
+                android:id="@+id/textMatkul4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_below="@id/matkul3"
+                android:layout_toRightOf="@id/matkul4"
+                android:gravity="center"
+                android:textSize="18dp"
+                android:text=""
+                android:textColor="@color/colorBlack" />
+
+            <TextView
+                android:id="@+id/matkul5"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_below="@id/matkul4"
+                android:textSize="18dp"
+                android:text="Matematika"
+                android:textColor="@color/colorBlack" />
+
+            <TextView
+                android:layout_width="10dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_below="@id/matkul4"
+                android:layout_toRightOf="@id/matkul5"
+                android:textSize="18dp"
+                android:text=": "
+                android:textColor="@color/colorBlack" />
+
+            <TextView
+                android:id="@+id/textMatkul5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_below="@id/matkul4"
+                android:layout_toRightOf="@id/matkul5"
+                android:gravity="center"
+                android:textSize="18dp"
+                android:text=""
+                android:textColor="@color/colorBlack" />
+
+            <TextView
+                android:id="@+id/matkul6"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_below="@id/matkul5"
+                android:textSize="18dp"
+                android:text="Pem. Berorientasi Obyek"
+                android:textColor="@color/colorBlack" />
+
+            <TextView
+                android:layout_width="10dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_below="@id/matkul5"
+                android:layout_toRightOf="@id/matkul6"
+                android:textSize="18dp"
+                android:text=": "
+                android:textColor="@color/colorBlack" />
+
+            <TextView
+                android:id="@+id/textMatkul6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_below="@id/matkul5"
+                android:layout_toRightOf="@id/matkul6"
+                android:gravity="center"
+                android:textSize="18dp"
+                android:text=""
+                android:textColor="@color/colorBlack" />
+
+            <TextView
+                android:id="@+id/matkul7"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_below="@id/matkul6"
+                android:textSize="18dp"
+                android:text="Pemrograman Dasar"
+                android:textColor="@color/colorBlack" />
+
+            <TextView
+                android:layout_width="10dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_below="@id/matkul6"
+                android:layout_toRightOf="@id/matkul7"
+                android:textSize="18dp"
+                android:text=": "
+                android:textColor="@color/colorBlack" />
+
+            <TextView
+                android:id="@+id/textMatkul7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_below="@id/matkul6"
+                android:layout_toRightOf="@id/matkul7"
+                android:gravity="center"
+                android:textSize="18dp"
+                android:text=""
+                android:textColor="@color/colorBlack" />
+
+            <TextView
+                android:id="@+id/matkul8"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_below="@id/matkul7"
+                android:textSize="18dp"
+                android:text="Pemrograman Visual"
+                android:textColor="@color/colorBlack" />
+
+            <TextView
+                android:layout_width="10dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_below="@id/matkul7"
+                android:layout_toRightOf="@id/matkul8"
+                android:textSize="18dp"
+                android:text=": "
+                android:textColor="@color/colorBlack" />
+
+            <TextView
+                android:id="@+id/textMatkul8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_below="@id/matkul7"
+                android:layout_toRightOf="@id/matkul8"
+                android:gravity="center"
+                android:textSize="18dp"
+                android:text=""
+                android:textColor="@color/colorBlack" />
+
+            <TextView
+                android:id="@+id/matkul9"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_below="@id/matkul8"
+                android:textSize="18dp"
+                android:text="Pemrograman Web"
+                android:textColor="@color/colorBlack" />
+
+            <TextView
+                android:layout_width="10dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_below="@id/matkul8"
+                android:layout_toRightOf="@id/matkul9"
+                android:textSize="18dp"
+                android:text=": "
+                android:textColor="@color/colorBlack" />
+
+            <TextView
+                android:id="@+id/textMatkul9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_below="@id/matkul8"
+                android:layout_toRightOf="@id/matkul9"
+                android:gravity="center"
+                android:textSize="18dp"
+                android:text=""
+                android:textColor="@color/colorBlack" />
+
+            <TextView
+                android:id="@+id/matkul10"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_below="@id/matkul9"
+                android:textSize="18dp"
+                android:text="Pengantar Teknologi Informasi"
+                android:textColor="@color/colorBlack" />
+
+            <TextView
+                android:layout_width="10dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_below="@id/matkul9"
+                android:layout_toRightOf="@id/matkul10"
+                android:textSize="18dp"
+                android:text=": "
+                android:textColor="@color/colorBlack" />
+
+            <TextView
+                android:id="@+id/textMatkul10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_below="@id/matkul9"
+                android:layout_toRightOf="@id/matkul10"
+                android:gravity="center"
+                android:textSize="18dp"
+                android:text=""
+                android:textColor="@color/colorBlack" />
+
+            <TextView
+                android:id="@+id/matkul11"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_below="@id/matkul10"
+                android:textSize="18dp"
+                android:text="Rekayasa Perangkat Lunak"
+                android:textColor="@color/colorBlack" />
+
+            <TextView
+                android:layout_width="10dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_below="@id/matkul10"
+                android:layout_toRightOf="@id/matkul11"
+                android:textSize="18dp"
+                android:text=": "
+                android:textColor="@color/colorBlack" />
+
+            <TextView
+                android:id="@+id/textMatkul11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_below="@id/matkul10"
+                android:layout_toRightOf="@id/matkul11"
+                android:gravity="center"
+                android:textSize="18dp"
+                android:text=""
+                android:textColor="@color/colorBlack" />
+
+            <TextView
+                android:id="@+id/matkul12"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_below="@id/matkul11"
+                android:textSize="18dp"
+                android:text="Sistem Operasi"
+                android:textColor="@color/colorBlack" />
+
+            <TextView
+                android:layout_width="10dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_below="@id/matkul11"
+                android:layout_toRightOf="@id/matkul12"
+                android:textSize="18dp"
+                android:text=": "
+                android:textColor="@color/colorBlack" />
+
+            <TextView
+                android:id="@+id/textMatkul12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_below="@id/matkul11"
+                android:layout_toRightOf="@id/matkul12"
+                android:gravity="center"
+                android:textSize="18dp"
+                android:text=""
+                android:textColor="@color/colorBlack" />
+
+            <TextView
+                android:id="@+id/matkul13"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_below="@id/matkul12"
+                android:textSize="18dp"
+                android:text="Struktur Data"
+                android:textColor="@color/colorBlack" />
+
+            <TextView
+                android:layout_width="10dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_below="@id/matkul12"
+                android:layout_toRightOf="@id/matkul13"
+                android:textSize="18dp"
+                android:text=": "
+                android:textColor="@color/colorBlack" />
+
+            <TextView
+                android:id="@+id/textMatkul13"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_below="@id/matkul12"
+                android:layout_toRightOf="@id/matkul13"
+                android:gravity="center"
+                android:textSize="18dp"
+                android:text=""
+                android:textColor="@color/colorBlack" />
+
+            <RelativeLayout
+                android:id="@+id/jedaBerkas"
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:layout_below="@id/textMatkul13"
+                android:background="#aaaaaa"/>
+
+            <TextView
+                android:id="@+id/textBerkas"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_below="@id/jedaBerkas"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:text="Berkas yang diperlukan"
+                android:textColor="@color/colorBlack"
+                android:textSize="20sp"
+                android:textStyle="bold"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@id/textBerkas"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="#dddddd"/>
+
+            <androidx.cardview.widget.CardView
+                app:cardBackgroundColor="@color/colorPrimaryDark"
+                app:cardCornerRadius="5dp"
+                android:id="@+id/pdfBerkas1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textBerkas"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:id="@+id/uploadPdf1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:textSize="20dp"
+                        android:text="Upload Berkas"
+                        android:textColor="@color/colorBlack" />
+
+                    <TextView
+                        android:id="@+id/textPdf11"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/uploadPdf1"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:textSize="18dp"
+                        android:text=""
+                        android:textStyle="bold"
+                        android:textColor="@color/colorBlack" />
+
+                    <TextView
+                        android:id="@+id/textPdf12"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/textPdf11"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:textSize="18dp"
+                        android:text=""
+                        android:textColor="@color/colorBlack" />
+
+                    <Button
+                        android:id="@+id/btnupload1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginBottom="20dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_below="@id/textPdf12"
+                        android:background="@drawable/btn_login"
+                        android:text="Proposal"
+                        android:textColor="@color/colorWhite"
+                        android:textAlignment="center" >
+                    </Button>
+
+                    <Button
+                        android:id="@+id/btnSave1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginBottom="20dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_below="@id/textPdf12"
+                        android:layout_toRightOf="@id/btnupload1"
+                        android:background="@drawable/btn_login"
+                        android:text="CV"
+                        android:textColor="@color/colorWhite"
+                        android:textAlignment="center" >
+                    </Button>
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>
